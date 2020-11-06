@@ -467,7 +467,7 @@
   <div class="comments" id="comments">
     
   </div>
-  
+
 
         </div>
         
@@ -728,26 +728,21 @@
 
 
 
-   
-   
-   
-   
-   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-   
-       <script type="text/javascript">
-           var gitment = new Gitment({
-              id: window.location.pathname, 
-               owner: '',
-               repo: '',
-               oauth: {
-                   client_id: '',
-                   client_secret: '',
-               }});
-           gitment.render('gitment-container');
-       </script>
-   
-
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '4b20eb2c9235e49cdb79',
+      clientSecret: '6aaa07ec69a20da09a7587c6a9ae9c3f07e5c890',
+      repo: 'neilismq.github.io',
+      owner: 'neilismq',
+      admin: ['neilismq'],
+      id: location.pathname,
+      distractionFreeMode: 'true'
+    })
+    gitalk.render('gitalk-container')
+  </script>
 
 
 
